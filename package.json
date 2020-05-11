@@ -1,8 +1,8 @@
 {
-  "name": "@le/util",
+  "name": "@lawrence666/le-util",
   "version": "1.0.0",
   "description": "le util for devlop",
-  "main": "dist/main.js",
+  "main": "src/index.js",
   "author": "luen",
   "license": "ISC",
   "scripts": {
@@ -16,6 +16,7 @@
     "test": "jest"
 
   },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.7",
