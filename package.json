@@ -7,7 +7,7 @@
   "license": "ISC",
   "scripts": {
     "build": "rm -rf ./dist && node --max_old_space_size=1024 ./node_modules/webpack/bin/webpack --config ./webpack.config.js",
-    "pub": " bash config/publish.sh",
+    "pub": "npm publish --access public",
     "test": "jest"
 
   },
