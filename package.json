@@ -6,12 +6,7 @@
   "author": "luen",
   "license": "ISC",
   "scripts": {
-    "all": "npm-run-all --parallel --race --continue-on-error lint:watch test:browser-watch",
     "build": "rm -rf ./dist && node --max_old_space_size=1024 ./node_modules/webpack/bin/webpack --config ./webpack.config.js",
-    "clean": "rm -rf ./dist ./demo",
-    "dev": "npm run all",
-    "lint": "esw ./src --color",
-    "lint:fix": "npm run lint --fix",
     "pub": " bash config/publish.sh",
     "test": "jest"
 
