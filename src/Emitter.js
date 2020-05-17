@@ -17,10 +17,11 @@ export class Emitter {
 		const index = this.store[event].indexOf(callback);
 		if (index > -1) {
 			this.store[event].splice(index, 1);
+			if (this.store[event].length == 0) {
+				delete this.store[event]; 
+			}
 		}
-		if (this.store[event].length == 0) {
-			delete this.store[event]; 
-		}
+		
 	}
 	emit(event, ...rest) {
 		if (!this.store[event]) return;
